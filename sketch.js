@@ -98,20 +98,20 @@ function keyPressed(){
     }
 }
 
-async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    var responseJSON = await response.json();
+//async function getBackgroundImg(){
+   // var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    //var responseJSON = await response.json();
 
-    var datetime = responseJSON.datetime;
-    var hour = datetime.slice(11,13);
+  //  var datetime = responseJSON.datetime;
+  //  var hour = datetime.slice(11,13);
     
-    if(hour>=06 && hour<=19){
-        bg = "sprites/bg1.png";
-    }
-    else{
-        bg = "sprites/bg2.jpg";
-    }
+ //   if(hour>=06 && hour<=19){
+      //  bg = "sprites/bg1.png";
+ //   }
+  //  else{
+  //      bg = "sprites/bg2.jpg";
+  //  }
 
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
+   // backgroundImg = loadImage(bg);
+   // console.log(backgroundImg);
 }
